@@ -1,0 +1,25 @@
+diff -ru a/hardware/arduino/avr/platform.txt b/hardware/arduino/avr/platform.txt
+--- a/hardware/arduino/avr/platform.txt	2015-05-06 17:24:13.000000000 +0300
++++ b/hardware/arduino/avr/platform.txt	2015-05-12 19:41:07.000000000 +0300
+@@ -18,7 +18,7 @@
+ compiler.warning_flags.all=-Wall -Wextra
+ 
+ # Default "compiler.path" is correct, change only if you want to overidde the initial value
+-compiler.path={runtime.tools.avr-gcc.path}/bin/
++compiler.path=/usr/bin/
+ compiler.c.cmd=avr-gcc
+ compiler.c.flags=-c -g -Os {compiler.warning_flags} -ffunction-sections -fdata-sections -MMD
+ # -w flag added to avoid printing a wrong warning http://gcc.gnu.org/bugzilla/show_bug.cgi?id=59396
+@@ -81,9 +81,9 @@
+ # AVR Uploader/Programmers tools
+ # ------------------------------
+ 
+-tools.avrdude.path={runtime.tools.avrdude.path}
+-tools.avrdude.cmd.path={path}/bin/avrdude
+-tools.avrdude.config.path={path}/etc/avrdude.conf
++tools.avrdude.path=/usr/bin/
++tools.avrdude.cmd.path=/usr/bin/avrdude
++tools.avrdude.config.path=/etc/avrdude.conf
+ 
+ tools.avrdude.upload.params.verbose=-v
+ tools.avrdude.upload.params.quiet=-q -q
