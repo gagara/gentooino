@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<repositories encoding="UTF-8" version="1.1">
+  <repo priority="50" quality="experimental">
+    <name>gentooino</name>
+    <description>Arduino-related packages</description>
+    <homepage>https://github.com/gagara/gentooino</homepage>
+    <owner>
+      <email>viacheslavg@gmail.com</email>
+      <name>Viacheslav Gagara</name>
+    </owner>
+    <source type="git">git://github.com/gagara/gentooino.git</source>
+    <source type="git">https://github.com/gagara/gentooino.git</source>
+  </repo>
+</repositories>
